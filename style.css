@@ -1,3 +1,9 @@
+  /* 🔧 CONTROLE GLOBAL DE FONTE — mude só este valor pra escalar tudo.
+     100% = 16px (padrão do navegador). 110% ≈ 17.6px | 120% ≈ 19px */
+  html{
+    font-size: 100%;
+  }
+
   /* Paleta de cores do site — cinza/branco, sem verde ou tema "hacker" */
   :root{
     --bg:#15171a;
@@ -21,9 +27,9 @@
     padding:32px 20px 80px;
     line-height:1.5;
   }
-  h1{font-size:25px; letter-spacing:.2px; margin:0 0 4px; text-align:center;}
+  h1{font-size:1.5625rem; letter-spacing:.2px; margin:0 0 4px; text-align:center;}
   h1::before{content:""; color:var(--accent);}
-  .sub{color:var(--muted); font-size:13px; margin:0 0 24px; text-align:center;}
+  .sub{color:var(--muted); font-size:0.8125rem; margin:0 0 24px; text-align:center;}
 
   /* Card do topo: campo de domínio alvo + botão de enumeração de subdomínios */
   .search-card{
@@ -49,10 +55,10 @@
     border:none;
     color:var(--text);
     font-family:var(--mono);
-    font-size:14px;
+    font-size:0.875rem;
   }
   .search-box input:focus{outline:none;}
-  .hint{font-size:11.5px; color:var(--muted); margin:10px 2px 0; display:flex; align-items:center; gap:6px;}
+  .hint{font-size:0.71875rem; color:var(--muted); margin:10px 2px 0; display:flex; align-items:center; gap:6px;}
 
   /* Nuvem de tags: clica no nome da categoria e pula/expande direto pra ela */
   .tag-cloud{
@@ -63,7 +69,7 @@
   }
   .tag{
     font-family:var(--mono);
-    font-size:11.5px;
+    font-size:0.71875rem;
     color:var(--text);
     background:var(--panel);
     border:1px solid var(--line);
@@ -95,12 +101,12 @@
     background:rgba(228,230,232,0.08);
     color:var(--accent);
     display:flex; align-items:center; justify-content:center;
-    font-size:17px;
+    font-size:1.0625rem;
     flex-shrink:0;
   }
   .category-info{flex:1;}
-  .category-title{font-size:14.5px; color:var(--text); font-weight:600;}
-  .category-count{font-size:11.5px; color:var(--muted); margin-top:2px;}
+  .category-title{font-size:0.90625rem; color:var(--text); font-weight:600;}
+  .category-count{font-size:0.71875rem; color:var(--muted); margin-top:2px;}
   .chevron{
     width:26px; height:26px;
     border:1px solid var(--line);
@@ -109,7 +115,7 @@
     color:var(--text);
     display:flex; align-items:center; justify-content:center;
     flex-shrink:0;
-    font-size:15px;
+    font-size:0.9375rem;
     font-weight:600;
     line-height:1;
   }
@@ -131,11 +137,11 @@
     gap:10px;
     margin-bottom:3px;
   }
-  .dork-name{font-size:13px; color:var(--text);}
+  .dork-name{font-size:0.8125rem; color:var(--text);}
   .dork-actions{display:flex; gap:6px; flex-shrink:0;}
   .dork-actions button, .dork-actions a{
     font-family:var(--mono);
-    font-size:11px;
+    font-size:0.6875rem;
     border-radius:5px;
     padding:4px 9px;
     cursor:pointer;
@@ -151,10 +157,11 @@
   .btn-copy:hover{color:var(--text); border-color:var(--muted) !important;}
   .btn-copy.copied{color:var(--text); border-color:var(--text) !important;}
   .dork-query{
-    font-size:11.5px;
+    font-size:0.71875rem;
     color:var(--muted);
     word-break:break-all;
   }
   .dork-query b{color:var(--text); font-weight:700;}
 
-  #topStatus{font-size:13px; color:var(--muted); margin:4px 0 18px; min-height:16px;}
+  #topStatus{font-size:0.8125rem; color:var(--muted); margin:4px 0 18px; min-height:16px;}
+
