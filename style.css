@@ -1,7 +1,7 @@
   /* 🔧 CONTROLE GLOBAL DE FONTE — mude só este valor pra escalar tudo.
      100% = 16px (padrão do navegador). 110% ≈ 17.6px | 120% ≈ 19px */
   html{
-    font-size: 120%;
+    font-size: 130%;
   }
 
   /* Paleta de cores do site — cinza/branco, sem verde ou tema "hacker" */
