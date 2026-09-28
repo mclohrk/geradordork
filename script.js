@@ -35,7 +35,8 @@ const CATEGORIES = [
     {name:"Index of private", query:'intitle:"index of" "private"'},
     {name:"Index of .git", query:'intitle:"index of" ".git"'},
     {name:"Index of uploads", query:'intitle:"index of" "uploads"'},
-    {name:"Index of logs", query:'intitle:"index of" "logs"'}
+    {name:"Index of logs", query:'intitle:"index of" "logs"'},
+    {name:"dhcpd.conf exposto", query:'intext:"dhcpd.conf" "index of"'}
   ]},
   { icon:"⚙️", title:"Configs de serviços", dorks:[
     {name:"Config Nginx", query:'filetype:conf inurl:nginx'},
@@ -69,7 +70,10 @@ const CATEGORIES = [
     {name:"JSON com private_key", query:'filetype:json "private_key" "BEGIN PRIVATE KEY"'},
     {name:"Config do Git exposta", query:'inurl:.git/config'},
     {name:"Chave SSH exposta", query:'inurl:.ssh/id_rsa'},
-    {name:".htpasswd exposto", query:'inurl:.htpasswd'}
+    {name:".htpasswd exposto", query:'inurl:.htpasswd'},
+    {name:"Chave SSH no GitHub", query:'site:github.com "BEGIN OPENSSH PRIVATE KEY"'},
+    {name:"Chave SSH em arquivo .nix", query:'ext:nix "BEGIN OPENSSH PRIVATE KEY"'},
+    {name:"Index of /etc/ssh", query:'intitle:"index of" "/etc/ssh"'}
   ]},
   { icon:"🌐", title:"Subdomínios / painéis", dorks:[
     {name:"Ambientes dev/staging", query:'inurl:dev OR inurl:staging OR inurl:homolog'},
@@ -79,7 +83,8 @@ const CATEGORIES = [
     {name:"Jenkins exposto", query:'inurl:jenkins'},
     {name:"Grafana exposto", query:'inurl:grafana'},
     {name:"Kibana exposto", query:'inurl:kibana'},
-    {name:"phpMyAdmin exposto", query:'inurl:phpmyadmin'}
+    {name:"phpMyAdmin exposto", query:'inurl:phpmyadmin'},
+    {name:"Login em ambiente UAT", query:'inurl:uat inurl:login'}
   ]},
   { icon:"📝", title:"WordPress", dorks:[
     {name:"Uploads do WP", query:'inurl:wp-content/uploads'},
